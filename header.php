@@ -26,43 +26,41 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
 	integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
 	crossorigin="anonymous"></script>
-	<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-		<script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/media.css">
-	</head>
+	<script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/media.css">
+</head>
 
-	<body <?php echo body_class(); ?>>
-		<header>
-			<div class="container">
-				<div class="innerContainerHeader">
-					<div class="hamburger">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-					<div class="logoCCOntainerHeader">
-						<?php  
-							$custom_logo_id = get_theme_mod( 'custom_logo' );
-							$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-						?>
-						<img src="<?php echo $image[0]; ?>">
-					</div>
-					<div class="listContainerLi">
-						<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="gift-card.html">Gift Cards</a></li>
-							<li><a href="faqs.html">FAQ</a></li>
-							<li><a href="request.html">Request a Weekly Softee Stop</a></li>
-							<li><a href="our-menu.html">Our Menu</a></li>
-							<li><a href="blogs.html">News</a></li>
-							<li><a href="request.html">Contact Us</a></li>
-							<li class="last-child"><a href="book.html">Book Softee</a></li>
-						</ul>
-					</div>
+<body <?php echo body_class(); ?>>
+	<header>
+		<div class="container">
+			<div class="innerContainerHeader">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="logoCCOntainerHeader">
+					<?php  
+					$custom_logo_id = get_theme_mod( 'custom_logo' );
+					$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+					?>
+					<img src="<?php echo $image[0]; ?>">
+				</div>
+				<div class="listContainerLi">
+					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+					<!-- <ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="gift-card.html">Gift Cards</a></li>
+						<li><a href="faqs.html">FAQ</a></li>
+						<li><a href="request.html">Request a Weekly Softee Stop</a></li>
+						<li><a href="our-menu.html">Our Menu</a></li>
+						<li><a href="blogs.html">News</a></li>
+						<li><a href="request.html">Contact Us</a></li>
+						<li class="last-child"><a href="book.html">Book Softee</a></li>
+					</ul> -->
 				</div>
 			</div>
-		</header>
+		</div>
+	</header>
