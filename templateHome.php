@@ -21,7 +21,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<img src="./images/3.png">
+					<img src="<?php the_field('imagesection2'); ?>">
 				</div>
 			</div>
 		</div>
