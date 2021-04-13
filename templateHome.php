@@ -116,15 +116,15 @@
 <section class="client-main">
 	<div class="iner-client">
 		<div class="owl-carousel client-slider owl-theme">
-			<?php   if( have_rows('repeater_field_name') ): while( have_rows('repeater_field_name') ) : the_row(); ?>
+			<?php if( have_rows('client_reviews') ): while( have_rows('client_reviews') ) : the_row(); ?>
 				<div class="item">
 					<div class="iner-sli">
 						<h3>CLIENT REVIEWS</h3>
-						<img class="clnt" src="images/client.png">
-						<span>Larry Powell</span>
-						<img class="star" src="images/stars.png">
-						<p>“ Excellent! Well Done Job in a timely manner! Best of Luck to Amir and his team! ”</p>
-						<h5>July 14, 2020</h5>
+						<img class="clnt" src="<?php the_sub_field('imageReviwer'); ?>">
+						<span><?php the_sub_field('nameReviwer'); ?></span>
+						<img class="star" src="<?php the_sub_field('image_star_rating'); ?>">
+						<p>“ <?php the_sub_field('contentReviwer'); ?> ”</p>
+						<h5><?php the_sub_field('dateReview'); ?></h5>
 					</div>
 				</div>		
 			<?php endwhile; else : endif; ?>
