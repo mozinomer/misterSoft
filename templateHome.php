@@ -115,49 +115,19 @@
 </div>
 <section class="client-main">
 	<div class="iner-client">
-
 		<div class="owl-carousel client-slider owl-theme">
-			<div class="item">
-				<div class="iner-sli">
-					<h3>CLIENT REVIEWS</h3>
-					<img class="clnt" src="images/client.png">
-					<span>Larry Powell</span>
-					<img class="star" src="images/stars.png">
-					<p>“ Excellent! Well Done Job in a timely manner! Best of Luck to Amir and his team! ”</p>
-					<h5>July 14, 2020</h5>
-				</div>
-			</div>
-			<div class="item">
-				<div class="iner-sli">
-					<h3>CLIENT REVIEWS</h3>
-					<img class="clnt" src="images/client.png">
-					<span>Larry Powell</span>
-					<img class="star" src="images/stars.png">
-					<p>“ Excellent! Well Done Job in a timely manner! Best of Luck to Amir and his team! ”</p>
-					<h5>July 14, 2020</h5>
-				</div>
-			</div>
-			<div class="item">
-				<div class="iner-sli">
-					<h3>CLIENT REVIEWS</h3>
-					<img class="clnt" src="images/client.png">
-					<span>Larry Powell</span>
-					<img class="star" src="images/stars.png">
-					<p>“ Excellent! Well Done Job in a timely manner! Best of Luck to Amir and his team! ”</p>
-					<h5>July 14, 2020</h5>
-				</div>
-			</div>
-			<div class="item">
-				<div class="iner-sli">
-					<h3>CLIENT REVIEWS</h3>
-					<img class="clnt" src="images/client.png">
-					<span>Larry Powell</span>
-					<img class="star" src="images/stars.png">
-					<p>“ Excellent! Well Done Job in a timely manner! Best of Luck to Amir and his team! ”</p>
-					<h5>July 14, 2020</h5>
-				</div>
-			</div>
-
+			<?php   if( have_rows('repeater_field_name') ): while( have_rows('repeater_field_name') ) : the_row(); ?>
+				<div class="item">
+					<div class="iner-sli">
+						<h3>CLIENT REVIEWS</h3>
+						<img class="clnt" src="images/client.png">
+						<span>Larry Powell</span>
+						<img class="star" src="images/stars.png">
+						<p>“ Excellent! Well Done Job in a timely manner! Best of Luck to Amir and his team! ”</p>
+						<h5>July 14, 2020</h5>
+					</div>
+				</div>		
+			<?php endwhile; else : endif; ?>
 		</div>
 		<a href="#">READ MORE AT YELP</a>
 	</div>
