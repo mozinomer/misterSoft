@@ -31,7 +31,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/media.css">
 </head>
-
+<?php wp_head(); ?>
 <body <?php echo body_class(); ?>>
 	<header>
 		<div class="container">
